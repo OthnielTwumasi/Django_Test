@@ -1,8 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'myapp/css/bootstrap.min.css' %}">
     <title>Document</title>
 </head>
 <body>
@@ -10,5 +13,9 @@
         {% block content %}
         <p>My name is {{name}}. I am {{age}} years old. My favourite food is {{food}} fried rice and chicken</p>
         {% endblock %}
+
+
+     <button class="btn btn-primary">Test Bootstrap</button>   
+    <script src= {% static "myapp/js/bootstrap.bundle.min.js"  %}></script>
 </body>
 </html>
